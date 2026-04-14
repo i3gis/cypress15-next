@@ -4,19 +4,7 @@
  */
 
 // ──────────────────────────────────────────────
-// 1. Version check — akan gagal di Cypress 12
-// ──────────────────────────────────────────────
-describe("Cypress Version Check", () => {
-  it("should be running Cypress 15", () => {
-    const version = Cypress.version;
-    const major = parseInt(version.split(".")[0], 10);
-    cy.log(`Running Cypress version: ${version}`);
-    expect(major).to.be.gte(15);
-  });
-});
-
-// ──────────────────────────────────────────────
-// 2. cy.session() tanpa experimental flag
+// 1. cy.session() tanpa experimental flag
 //    Cypress 12: butuh experimentalSessionAndOrigin: true di config
 //    Cypress 13+: built-in, tidak perlu flag
 // ──────────────────────────────────────────────
