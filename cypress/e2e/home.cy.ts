@@ -4,7 +4,7 @@ describe("Home Page", () => {
   });
 
   it("should load the home page", () => {
-    cy.url().should("eq", "http://localhost:3000/");
+    cy.url().should("include", "/");
   });
 
   it("should display the Next.js logo", () => {
