@@ -12,10 +12,10 @@ describe("Home Page", () => {
   });
 
   it("should have a link to the Next.js docs", () => {
-    cy.get("a").contains("Docs").should("exist");
+    cy.get("a").contains("Documentation").should("exist");
   });
 
   it("should have a link to deploy on Vercel", () => {
-    cy.get("a").contains("Deploy now").should("exist");
+    cy.get("a").contains("Deploy Now").should("exist");
   });
 });
